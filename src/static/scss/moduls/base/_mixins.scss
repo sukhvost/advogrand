@@ -1,0 +1,21 @@
+@import "var";
+
+@mixin font($font: $fontR, $size: 1rem, $weight: normal, $style: normal, $color: $black){
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+}
+
+@mixin flex($dir: row, $jc: space-between, $ai: center){
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin margin($yl: 0, $x: auto, $yr: 0) {
+  margin: $yl $x $yr;
+}
+
