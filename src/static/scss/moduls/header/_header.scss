@@ -1,2 +1,8 @@
 @import "../base/var";
 @import "../base/mixins";
+
+@import "../buttons/buttons";
+
+@import "./header-moduls/header-nav";
+@import "./header-moduls/header-logo";
+@import "./header-moduls/header-content";
