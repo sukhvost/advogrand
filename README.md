@@ -2,4 +2,4 @@
 
 ##My project.
 
-#Technology stack: Gulp PUG SCSS BEM
+#Technology stack: Gulp PUG SCSS BEM FlexBox

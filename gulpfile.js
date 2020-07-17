@@ -13,7 +13,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('scss', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/static/scss/main.scss'])
+    return gulp.src('src/static/scss/main.scss')
         .pipe(gp.sourcemaps.init())
         .pipe(gp.sass())
         .pipe(gp.autoprefixer({
@@ -29,7 +29,7 @@ gulp.task('scss', function() {
 });
 
 gulp.task('scripts:lib', function() {
-    return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/popper.js/dist/popper.js', 'node_modules/bootstrap/dist/js/bootstrap.js'])
+    return gulp.src('node_modules/jquery/dist/jquery.js')
         .pipe(gp.concat('libs.min.js'))
         .pipe(gulp.dest('build/static/js'))
         .on('end', browserSync.stream)
